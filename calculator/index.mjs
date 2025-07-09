@@ -1,7 +1,3 @@
-import add from "./add.mjs";
-import divide from "./divide.mjs";
-import multiply from "./multiply.mjs";
-import subtract from "./subtract.mjs";
 import { stdin as input, stdout as output } from "node:process";
 import Readlline from "readline/promises";
 
@@ -22,16 +18,12 @@ async function prompt() {
   try {
     switch (op) {
       case "+":
-        result = add(a, b);
         break;
       case "-":
-        result = subtract(a, b);
         break;
       case "*":
-        result = multiply(a, b);
         break;
       case "/":
-        result = divide(a, b);
         break;
       default:
         result = "Not a proper operand !";

@@ -203,7 +203,6 @@ node index.mjs
 
 1. Create a new function `multiply(a, b)` in both `math.js` and `math.mjs`.
 2. Add a call to that function in each `index` file.
-3. Try mixing module systems (e.g., using `require()` to load an ES Module). What happens?
 
 ---
 
@@ -217,36 +216,3 @@ Create a new folder called `calculator` and implement a small calculator app usi
 - Organize each operation in its own file and use `import` to load them
 
 ---
-
-## 🔁 Convert CommonJS to ESM
-
-Try converting your `commonjs` code into an ESM project by:
-
-1. Renaming files to `.mjs`
-2. Replacing `require` with `import`
-3. Replacing `module.exports` with `export`
-
-Don't forget to run:
-
-```bash
-node --experimental-modules yourfile.mjs
-```
-
-Or add to `package.json`:
-
-```json
-"type": "module"
-```
-
----
-
-## 📚 References
-
-- [Node.js Modules Documentation](https://nodejs.org/api/modules.html)
-- [Node.js ECMAScript Modules Guide](https://nodejs.org/api/esm.html)
-
----
-
-```
-
-```
