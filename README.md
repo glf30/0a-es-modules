@@ -58,7 +58,7 @@ module.exports = greet;
 const greet = require("./utils");
 console.log(greet("Ada"));
 ```
-````
+
 
 ### **After (ES Module syntax)**
 
