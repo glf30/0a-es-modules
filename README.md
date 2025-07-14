@@ -1,13 +1,12 @@
-````markdown
-# 📦 Node.js Module Systems: CommonJS vs. ES Modules
+#  Node.js Module Systems: CommonJS vs. ES Modules
 
-## 🎯 Objective
+##  Objective
 
 Understand the difference between **CommonJS (CJS)** and **ECMAScript Modules (ESM)** in Node.js. Learn how to create and use modules with both systems, and identify when to use each.
 
 ---
 
-## 🧠 What You'll Learn
+##  What You'll Learn
 
 - What modules are in Node.js
 - How to export and import using CommonJS (`require` / `module.exports`)
@@ -17,11 +16,11 @@ Understand the difference between **CommonJS (CJS)** and **ECMAScript Modules (E
 
 ---
 
-# 📦 Understanding ES Modules (ECMAScript Modules)
+# Understanding ES Modules (ECMAScript Modules)
 
 ---
 
-## 🧠 Introductory Concept
+## Introductory Concept
 
 Imagine your codebase as a big toolbox. Rather than throwing all your tools (functions, variables, components) into one messy box, wouldn’t it be better to organize them into labeled drawers? That’s what **ES Modules** do in JavaScript.
 
@@ -31,7 +30,7 @@ Imagine your codebase as a big toolbox. Rather than throwing all your tools (fun
 
 ---
 
-## 📜 Historical Context: How We Got Here
+## Historical Context: How We Got Here
 
 Before ES Modules, developers used workarounds like:
 
@@ -44,9 +43,9 @@ Then came **ES6 (2015)**, which introduced **ES Modules**—the official, standa
 
 ---
 
-## 🔁 Before vs. After
+## Before vs. After
 
-### 👴 **Before (CommonJS in Node.js)**
+### **Before (CommonJS in Node.js)**
 
 ```js
 // utils.js
@@ -61,7 +60,7 @@ console.log(greet("Ada"));
 ```
 ````
 
-### 👶 **After (ES Module syntax)**
+### **After (ES Module syntax)**
 
 ```js
 // utils.mjs or utils.js (with "type": "module" in package.json)
@@ -74,11 +73,11 @@ import { greet } from "./utils.js";
 console.log(greet("Ada"));
 ```
 
-> ✅ With ES Modules, we can **import/export named pieces of functionality** in a clear, declarative way.
+> With ES Modules, we can **import/export named pieces of functionality** in a clear, declarative way.
 
 ---
 
-## 🚀 Modern Application
+## Modern Application
 
 ES Modules are used in all modern JavaScript frameworks and libraries, including:
 
@@ -90,7 +89,7 @@ They support **tree-shaking**, which means unused code can be removed during bun
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```js
 
@@ -110,7 +109,7 @@ es-modules-assignment/
 
 ---
 
-## 📘 Part 1: CommonJS (CJS)
+## Part 1: CommonJS (CJS)
 
 CommonJS is the **default module system** in Node.js (prior to ES Modules support).
 
@@ -142,7 +141,7 @@ console.log("5 + 3 =", math.add(5, 3));
 console.log("5 - 3 =", math.subtract(5, 3));
 ```
 
-### ✅ Try it out:
+### Try it out:
 
 ```bash
 cd commonjs
@@ -151,7 +150,7 @@ node index.js
 
 ---
 
-## 📗 Part 2: ECMAScript Modules (ESM)
+## Part 2: ECMAScript Modules (ESM)
 
 ES Modules use `import`/`export` syntax and are supported in Node.js via `.mjs` files or `"type": "module"` in `package.json`.
 
@@ -177,18 +176,18 @@ console.log("10 + 7 =", add(10, 7));
 console.log("10 - 7 =", subtract(10, 7));
 ```
 
-### ✅ Try it out:
+### Try it out:
 
 ```bash
 cd esm
 node index.mjs
 ```
 
-> ⚠️ Make sure you're using Node.js 14+ for ES Module support
+>  Make sure you're using Node.js 14+ for ES Module support
 
 ---
 
-## 📊 Key Differences
+## Key Differences
 
 | Feature                  | CommonJS (`require`) | ES Modules (`import`)                     |
 | ------------------------ | -------------------- | ----------------------------------------- |
@@ -199,14 +198,14 @@ node index.mjs
 
 ---
 
-## 💻 Exercise
+## Exercise
 
 1. Create a new function `multiply(a, b)` in both `math.js` and `math.mjs`.
 2. Add a call to that function in each `index` file.
 
 ---
 
-## 🚀 Challenge
+## Challenge
 
 Create a new folder called `calculator` and implement a small calculator app using ES Modules. It should:
 
